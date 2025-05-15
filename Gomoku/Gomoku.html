@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>五目並べ</title>
+    <style>
+        table { border-collapse: collapse; }
+        td {
+            width: 32px; height: 32px;
+            border: 1px solid #333;
+            text-align: center;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>五目並べ</h1>
+    <label>kの値: <input type="number" id="kValue" value="7" min="3" max="20"></label>
+    <button onclick="initBoard()">盤を作成</button>
+    <div id="board"></div>
+    <p id="message"></p>
+    <script>
+        let k = 7; // デフォルト値
+        let size = 2 * k + 1;
+        let board = [];
+        let currentPlayer = "●";
+        let gameOver = false;
+
+        function initBoard() {
+            k = parseInt(document.getElementById('kValue').value, 10);
+            size = 2 * k + 1;
+            board = Array.from({length: size}, () => Array(size).fill(""));
+            currentPlayer = "●";
+            gameOver = false;
+            document.getElementById('message').textContent = "";
+            renderBoard();
+        }
+
+        function renderBoard() {
+            const boardDiv = document.getElementById('board');
+            let html = '<table>';
+            for (let i = 0; i < size; i++) {
+                html += '<tr>';
+                for (let j = 0; j < size; j++) {
+                    html += `<td onclick="placeStone(${i},${j})">${board[i][j]}</td>`;
+                }
+                html += '</tr>';
+            }
+            html += '</table>';
+            boardDiv.innerHTML = html;
+        }
+
+        function placeStone(i, j) {
+            if (gameOver || board[i][j]) return;
+            board[i][j] = currentPlayer;
+            renderBoard();
+            if (checkWin(i, j)) {
+                document.getElementById('message').textContent = `${currentPlayer}の勝ち！`;
+                gameOver = true;
+                return;
+            }
+            currentPlayer = currentPlayer === "●" ? "○" : "●";
+        }
+
+        function checkWin(x, y) {
+            const dirs = [
+                [1, 0], [0, 1], [1, 1], [1, -1]
+            ];
+            for (const [dx, dy] of dirs) {
+                let count = 1;
+                for (let d = 1; d <= 4; d++) {
+                    let nx = x + dx * d, ny = y + dy * d;
+                    if (nx < 0 || ny < 0 || nx >= size || ny >= size) break;
+                    if (board[nx][ny] === currentPlayer) count++;
+                    else break;
+                }
+                for (let d = 1; d <= 4; d++) {
+                    let nx = x - dx * d, ny = y - dy * d;
+                    if (nx < 0 || ny < 0 || nx >= size || ny >= size) break;
+                    if (board[nx][ny] === currentPlayer) count++;
+                    else break;
+                }
+                if (count >= 5) return true;
+            }
+            return false;
+        }
+
+        // 初期化
+        window.onload = initBoard;
+    </script>
+</body>
+</html>
