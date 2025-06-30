@@ -1,71 +1,84 @@
 <About_Maximum>
   <web_development>
     <title>Maximum</title>
-    <description>Maximum is a web development company that specializes in creating high-quality websites and applications.</description>
+    <description>
+      Maximum is a web development company that specializes in creating high-quality websites and applications.
+    </description>
     <services>
       <service>Web Design</service>
       <service>Web Development</service>
       <service>E-commerce Solutions</service>
       <service>SEO Services</service>
     </services>
-    </web_development>
+  </web_development>
 
-    <Game_Development>
-      <title>Game Development</title>
-      <description>Maximum also offers game development services, creating engaging and interactive games for various platforms.</description>
-      <services>
-        <service>Mobile Game Development</service>
-        <service>PC Game Development</service>
-        <service>Console Game Development</service>
-      </services>
-    </Game_Development>
+  <Game_Development>
+    <title>Game Development</title>
+    <description>
+      Maximum also offers game development services, creating engaging and interactive games for various platforms.
+    </description>
+    <services>
+      <service>Mobile Game Development</service>
+      <service>PC Game Development</service>
+      <service>Console Game Development</service>
+    </services>
+  </Game_Development>
 
-    <Competitive_programming>
-      <title>Competitive Programming</title>
-      <description>Maximum encourages competitive programming to enhance problem-solving skills and coding proficiency.</description>
-      <resources>
-        <resource>Online Coding Platforms</resource>
-        <resource>Programming Contests</resource>
-        <resource>Code Review Sessions</resource>
-      </resources>
+  <Competitive_programming>
+    <title>Competitive Programming</title>
+    <description>
+      Maximum encourages competitive programming to enhance problem-solving skills and coding proficiency.
+    </description>
+    <resources>
+      <resource>Online Coding Platforms</resource>
+      <resource>Programming Contests</resource>
+      <resource>Code Review Sessions</resource>
+    </resources>
+  </Competitive_programming>
 
-    </Competitive_programming>
-
- <CTF>
+  <CTF>
     <title>Capture The Flag (CTF)</title>
-        <description>Maximum organizes CTF events to promote cybersecurity awareness and skills among participants.</description>
-        <events>
-        <event>Annual CTF Competition</event>
-        <event>Workshops and Training Sessions</event>
-        <event>Online Challenges</event>
-        </events>
-    </CTF>
-    
-    <Mobile_App>
-        <title>Mobile App Development</title>
-        <description>Maximum develops mobile applications for both Android and iOS platforms, focusing on user experience and performance.</description>
-        <services>
-        <service>Android App Development</service>
-        <service>iOS App Development</service>
-        <service>Cross-Platform Development</service>
-        </services>
-    </Mobile_App>
-     
-     <AI>
-        <title>Artificial Intelligence</title>
-        <description>Maximum integrates AI technologies into applications to enhance functionality and user experience.</description>
-        <services>
-        <service>Machine Learning Solutions</service>
-        <service>Natural Language Processing</service>
-        <service>AI Chatbots</service>
-        </services>
-    </AI>
+    <description>
+      Maximum organizes CTF events to promote cybersecurity awareness and skills among participants.
+    </description>
+    <events>
+      <event>Annual CTF Competition</event>
+      <event>Workshops and Training Sessions</event>
+      <event>Online Challenges</event>
+    </events>
+  </CTF>
 
-    <Infrastructure>
-        <title>Infrastructure Management</title>
-        <description>Maximum provides infrastructure management services to ensure optimal performance and security of applications.</description>
-        <services>
-        <service>Cloud Services</service>
-        <service>Server Management</service>
-        <service>Network Security</service>
-        </services>
+  <Mobile_App>
+    <title>Mobile App Development</title>
+    <description>
+      Maximum develops mobile applications for both Android and iOS platforms, focusing on user experience and performance.
+    </description>
+    <services>
+      <service>Android App Development</service>
+      <service>iOS App Development</service>
+      <service>Cross-Platform Development</service>
+    </services>
+  </Mobile_App>
+
+  <AI>
+    <title>Artificial Intelligence</title>
+    <description>
+      Maximum integrates AI technologies into applications to enhance functionality and user experience.
+    </description>
+    <services>
+      <service>Machine Learning Solutions</service>
+      <service>Natural Language Processing</service>
+      <service>AI Chatbots</service>
+    </services>
+  </AI>
+
+  <Infrastructure>
+    <title>Infrastructure Management</title>
+    <description>
+      Maximum provides infrastructure management services to ensure optimal performance and security of applications.
+    </description>
+    <services>
+      <service>Cloud Services</service>
+      <service>Server Management</service>
+      <service>Network Security</service>
+    </services>
