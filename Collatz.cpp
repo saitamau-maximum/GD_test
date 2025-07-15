@@ -13,7 +13,7 @@ count1++;
 a=a/2; 
 count2++;   
 }}
-return (2^count1)*(3^count2);
+return (2^count1)*(3^count2);//指数に情報を保存することでint型のまま2つの整数情報を保存する。
 }
 
 int main(){
@@ -21,7 +21,7 @@ int a,b,count1=0,count2=0;
 
 while(1){
 cin >> a;
-if(a%1==0){
+if(a%1!=0){
 cout << "Eroor" <<endl;
 break;    
 }
@@ -42,8 +42,8 @@ count2++;
 break;
 }}
 
-cout << count1 << " " << count2 << endl;
+cout << count1 << " " << count2 << endl;//奇数の時と偶数の時を表示
 cout << endl;
-count1=0;
+count1=0;//countをリセット
 count2=0;
 }}
