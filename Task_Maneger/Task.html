@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ローカル保存TODO（オフライン安定版）</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Noto Sans JP',sans-serif;margin:24px;background:#f7f8fb}
+    .wrap{max-width:720px;margin:0 auto;background:#fff;padding:20px;border-radius:10px;box-shadow:0 6px 20px rgba(30,30,60,0.06)}
+    h1{margin:0 0 12px;font-size:20px}
+    .input-row{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+    input[type=text], input[type=date], input[type=datetime-local], input[type=number]{flex:1;padding:10px;border:1px solid #ddd;border-radius:8px}
+    select{padding:10px;border:1px solid #ddd;border-radius:8px}
+    button{padding:8px 12px;border-radius:8px;border:0;background:#2563eb;color:#fff;cursor:pointer}
+    ul{list-style:none;padding:0;margin:0}
+    li{display:flex;align-items:center;gap:8px;padding:8px;border-bottom:1px solid #f0f2f6;flex-wrap:wrap}
+    li .txt{flex:1}
+    .small{font-size:12px;color:#666}
+    .controls{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+    .muted{background:#eee;color:#333}
+    .date-label{font-size:12px;color:#888;margin-left:8px;}
+    .repeat-label{font-size:12px;color:#0a0;}
+    .show-from-label{font-size:12px;color:#06a;}
+    .guide {background:#f0f4ff;border-left:4px solid #2563eb;padding:10px 14px;margin-bottom:16px;border-radius:6px;font-size:14px;line-height:1.6;}
+    code {background:#eef;border-radius:4px;padding:1px 4px;}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <h1>ローカル保存TODO（オフライン）</h1>
+
+    <!-- 入力説明エリア -->
+    <div class="guide">
+      <strong>入力欄の使い方：</strong><br>
+      <ul style="margin:6px 0 0 16px; padding:0;">
+        <li><b>やることを入力：</b> タスクの内容を入力します（例：レポート提出、買い物など）。</li>
+        <li><b>期限日時：</b> タスクの締め切り日時を設定します。</li>
+        <li><b>繰り返し設定：</b> <code>毎週</code>・<code>2週間ごと</code>・<code>毎月</code> から選べます。</li>
+        <li><b>繰り返し開始・終了日時：</b> 繰り返しタスクを使う場合に指定します。</li>
+        <li><b>繰り返し回数：</b> 何回分タスクを自動生成するかを設定します。</li>
+        <li><b>何日前から表示：</b> 期限の何日前にタスクを表示させるかを設定します。</li>
+        <li>設定後、「追加」ボタンで登録します。</li>
+      </ul>
+    </div>
+
+    <!-- 実際の入力欄 -->
+    <div class="input-row">
+      <input id="todo-input" type="text" placeholder="やることを入力" />
+      <input id="todo-date" type="datetime-local" />
+      <select id="repeat-select">
+        <option value="">繰り返しなし</option>
+        <option value="weekly">毎週</option>
+        <option value="biweekly">2週間ごと</option>
+        <option value="monthly">毎月</option>
+      </select>
+      <input id="repeat-start" type="datetime-local" class="hidden" placeholder="繰り返し開始日時" />
+      <input id="repeat-deadline" type="datetime-local" class="hidden" placeholder="繰り返し終了日時" />
+      <input id="repeat-count" type="number" class="hidden" min="1" value="5" placeholder="繰り返し回数" />
+      <input id="show-from" type="number" min="0" value="0" placeholder="何日前から表示" style="max-width:110px;" />
+      <button id="add-btn">追加</button>
+    </div>
+
+    <ul id="list"></ul>
+    <ul id="hidden-list" style="margin-top:24px;background:#f5f5f5;padding:12px;border-radius:8px;">
+      <li style="color:#888;font-size:13px;">まだ表示されないタスク</li>
+    </ul>
+
+    <div class="controls">
+      <button id="export-btn" class="muted">JSONでエクスポート</button>
+      <button id="import-btn" class="muted">JSONをインポート</button>
+      <button id="save-fsa" class="muted">直接ファイル保存（File System Access）</button>
+      <input id="file-input" type="file" accept="application/json" style="display:none" />
+    </div>
+
+    <p class="small">
+      自動バックアップ：ブラウザの <code>localStorage</code> に保存されます。<br>
+      ファイルとして保存したい場合は「エクスポート」を使ってください。
+    </p>
+  </div>
+
+  <!-- スクリプト部分（あなたの最新版を完全保持） -->
+  <script>
+    const STORAGE_KEY = 'local_todo_app_v5';
+    let todos = [];
+
+    const input = document.getElementById('todo-input');
+    const dateInput = document.getElementById('todo-date');
+    const repeatSelect = document.getElementById('repeat-select');
+    const repeatStartInput = document.getElementById('repeat-start');
+    const repeatDeadlineInput = document.getElementById('repeat-deadline');
+    const repeatCountInput = document.getElementById('repeat-count');
+    const showFromInput = document.getElementById('show-from');
+    const addBtn = document.getElementById('add-btn');
+    const listEl = document.getElementById('list');
+    const hiddenListEl = document.getElementById('hidden-list');
+    const exportBtn = document.getElementById('export-btn');
+    const importBtn = document.getElementById('import-btn');
+    const fileInput = document.getElementById('file-input');
+    const saveFsaBtn = document.getElementById('save-fsa');
+
+    repeatSelect.addEventListener('change', () => {
+      const show = repeatSelect.value !== '';
+      repeatStartInput.classList.toggle('hidden', !show);
+      repeatDeadlineInput.classList.toggle('hidden', !show);
+      repeatCountInput.classList.toggle('hidden', !show);
+    });
+
+    function saveToLocalStorage() { localStorage.setItem(STORAGE_KEY, JSON.stringify(todos)); }
+    function loadFromLocalStorage() {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return;
+      try { todos = JSON.parse(raw); } catch { todos = []; }
+    }
+
+    function generateRepeatingTasks() {
+      let updated = false;
+      const today = new Date();
+      todos.forEach(t => {
+        if (t.repeat && t.repeatStart) {
+          let intervalDays = 0;
+          if (t.repeat === 'weekly') intervalDays = 7;
+          else if (t.repeat === 'biweekly') intervalDays = 14;
+          else if (t.repeat === 'monthly') intervalDays = 30;
+          if (!intervalDays) return;
+          const existingDates = todos.filter(x =>
+            x.text === t.text && x.repeat === t.repeat && x.repeatStart === t.repeatStart
+          ).map(x => x.date);
+          let start = new Date(t.repeatStart);
+          let repeatCount = Number(t.repeatCount) || 0;
+          let deadline = t.repeatDeadline ? new Date(t.repeatDeadline) : null;
+          for (let i = 0; i < (repeatCount || 100); i++) {
+            const d = new Date(start);
+            d.setDate(d.getDate() + i * intervalDays);
+            if (deadline && d > deadline) break;
+            const dateStr = d.toISOString().slice(0, 16);
+            if (existingDates.includes(dateStr)) continue;
+            const showFrom = Number(t.showFrom) || 0;
+            const showDate = new Date(d);
+            showDate.setDate(d.getDate() - showFrom);
+            if (showDate > today) continue;
+            todos.push({
+              text: t.text,
+              done: false,
+              createdAt: new Date().toISOString(),
+              date: dateStr,
+              repeat: t.repeat,
+              repeatStart: t.repeatStart,
+              repeatDeadline: t.repeatDeadline || null,
+              repeatCount: repeatCount,
+              showFrom: showFrom
+            });
+            updated = true;
+          }
+        }
+      });
+      if (updated) saveToLocalStorage();
+    }
+
+    function shouldShowTask(t) {
+      if (!t.date || t.done) return true;
+      const showFrom = Number(t.showFrom) || 0;
+      const today = new Date();
+      today.setHours(0,0,0,0);
+      const deadline = new Date(t.date);
+      deadline.setHours(0,0,0,0);
+      const showDate = new Date(deadline);
+      showDate.setDate(deadline.getDate() - showFrom);
+      return today >= showDate;
+    }
+
+    function render() {
+      listEl.innerHTML = '';
+      hiddenListEl.innerHTML = '<li style="color:#888;font-size:13px;">まだ表示されないタスク</li>';
+      todos.sort((a,b)=>(a.date||'').localeCompare(b.date||''));
+      todos.forEach((t,i)=>{
+        const li=document.createElement('li');
+        const chk=document.createElement('input');
+        chk.type='checkbox';chk.checked=!!t.done;
+        chk.addEventListener('change',()=>{t.done=chk.checked;saveToLocalStorage();render();});
+        const span=document.createElement('span');
+        span.className='txt';span.textContent=t.text;
+        if(t.done) span.style.textDecoration='line-through';
+        if(t.date){
+          const dateLabel=document.createElement('span');
+          dateLabel.className='date-label';
+          dateLabel.textContent=`期限: ${t.date}`;
+          li.appendChild(dateLabel);
+        }
+        if(t.repeat){
+          const label={weekly:'（毎週）',biweekly:'（2週間ごと）',monthly:'（毎月）'}[t.repeat];
+          const repeatLabel=document.createElement('span');
+          repeatLabel.className='repeat-label';
+          repeatLabel.textContent=label;
+          li.appendChild(repeatLabel);
+        }
+        if(t.repeatStart){
+          const s=document.createElement('span');
+          s.className='date-label';
+          s.textContent=`開始: ${t.repeatStart}`;
+          li.appendChild(s);
+        }
+        if(t.repeatDeadline){
+          const e=document.createElement('span');
+          e.className='date-label';
+          e.textContent=`終了: ${t.repeatDeadline}`;
+          li.appendChild(e);
+        }
+        if(t.showFrom>0){
+          const sf=document.createElement('span');
+          sf.className='show-from-label';
+          sf.textContent=`（${t.showFrom}日前から表示）`;
+          li.appendChild(sf);
+        }
+        const edit=document.createElement('button');
+        edit.textContent='編集';edit.className='muted';
+        edit.addEventListener('click',()=>{const v=prompt('編集してください',t.text);if(v!==null){t.text=v.trim();saveToLocalStorage();render();}});
+        const del=document.createElement('button');
+        del.textContent='削除';del.className='muted';
+        del.addEventListener('click',()=>{if(confirm('削除しますか？')){todos.splice(i,1);saveToLocalStorage();render();}});
+        li.append(chk,span,edit,del);
+        if(shouldShowTask(t)) listEl.appendChild(li); else hiddenListEl.appendChild(li);
+      });
+    }
+
+    function addTodo(text,date,repeat,repeatStart,repeatDeadline,repeatCount,showFrom){
+      text=text.trim();if(!text) return;
+      todos.push({
+        text,done:false,createdAt:new Date().toISOString(),
+        date:date||null,repeat:repeat||'',
+        repeatStart:repeat?repeatStart||null:null,
+        repeatDeadline:repeat?repeatDeadline||null:null,
+        repeatCount:repeat?Number(repeatCount)||0:0,
+        showFrom:Number(showFrom)||0
+      });
+      saveToLocalStorage();render();
+    }
+
+    addBtn.addEventListener('click',()=>{
+      addTodo(input.value,dateInput.value,repeatSelect.value,repeatStartInput.value,repeatDeadlineInput.value,repeatCountInput.value,showFromInput.value);
+      input.value='';dateInput.value='';repeatSelect.value='';
+      repeatStartInput.value='';repeatDeadlineInput.value='';repeatCountInput.value='5';showFromInput.value='0';
+      repeatStartInput.classList.add('hidden');repeatDeadlineInput.classList.add('hidden');repeatCountInput.classList.add('hidden');input.focus();
+    });
+    input.addEventListener('keydown',e=>{if(e.key==='Enter')addBtn.click();});
+
+    exportBtn.addEventListener('click',()=>{
+      if(todos.length===0)return alert('データがありません');
+      const blob=new Blob([JSON.stringify(todos,null,2)],{type:'application/json'});
+      const url=URL.createObjectURL(blob);
+      const a=document.createElement('a');a.href=url;a.download='todos.json';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
+    });
+
+    importBtn.addEventListener('click',()=>fileInput.click());
+    fileInput.addEventListener('change',async ev=>{
+      const f=ev.target.files[0];if(!f)return;
+      try{
+        const txt=await f.text();
+        const parsed=JSON.parse(txt);
+        if(!Array.isArray(parsed))throw new Error('配列ではありません');
+        if(confirm('追加しますか？キャンセルで上書きします。'))todos=todos.concat(parsed);else todos=parsed;
+        saveToLocalStorage();render();
+      }catch(err){alert('読み込み失敗: '+err.message);}
+      fileInput.value='';
+    });
+
+    let fileHandle=null;
+    saveFsaBtn.addEventListener('click',async ()=>{
+      if(!('showSaveFilePicker'in window)){alert('このブラウザは非対応です');return;}
+      try{
+        if(!fileHandle){
+          fileHandle=await window.showSaveFilePicker({suggestedName:'todos.json',types:[{description:'JSON',accept:{'application/json':['.json']}}]});
+        }
+        const writable=await fileHandle.createWritable();
+        await writable.write(JSON.stringify(todos,null,2));await writable.close();alert('保存しました');
+      }catch(e){if(e.name!=='AbortError')console.error(e);}
+    });
+
+    loadFromLocalStorage();generateRepeatingTasks();render();
+    setInterval(saveToLocalStorage,60000);
+    window.addEventListener('beforeunload',saveToLocalStorage);
+  </script>
+</body>
+</html>
