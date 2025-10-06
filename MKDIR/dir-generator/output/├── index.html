@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ディレクトリZIP作成</title>
+</head>
+<body>
+    <h1>ディレクトリZIP作成ツール</h1>
+    <textarea id="directory-structure" rows="10" cols="50" placeholder="例:
+folder1/
+  file1.txt
+  file2.txt
+folder2/
+  subfolder/
+    file3.txt"></textarea>
+    <br>
+    <button onclick="generateZip()">ZIPを作成</button>
+    <script>
+        function generateZip() {
+            const structure = document.getElementById('directory-structure').value;
+            fetch('/create-zip', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ structure })
+            })
+            .then(response => response.blob())
+            .then(blob => {
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'directory.zip';
+                document.body.appendChild(a);
+                a.click();
+                window.URL.revokeObjectURL(url);
+            })
+            .catch(error => console.error('ZIP作成エラー:', error));
+        }
+    </script>
+</body>
+</html>

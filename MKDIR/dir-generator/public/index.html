@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ディレクトリ自動生成ツール</title>
+</head>
+<body>
+    <h1>ディレクトリ自動生成ツール</h1>
+    <textarea id="directoryInput" placeholder="ディレクトリ構造を入力"></textarea>
+    <button onclick="generateDirectory()">生成する</button>
+    <pre id="resultOutput"></pre>
+
+    <h2>ZIPファイルをアップロード</h2>
+    <input type="file" id="zipFileInput" accept=".zip">
+    <button onclick="uploadZipFile()">アップロード</button>
+    <pre id="uploadResult"></pre>
+    <a id="downloadLink" style="display:none;" href="#" download="uploaded.zip">ダウンロード</a>
+
+    <script>
+        async function generateDirectory() {
+            const input = document.getElementById('directoryInput').value;
+            const output = document.getElementById('resultOutput');
+            
+            try {
+                const response = await fetch('/api/generate', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ structure: input })
+                });
+
+                const result = await response.json();
+                output.textContent = result.message;
+            } catch (error) {
+                output.textContent = 'エラーが発生しました: ' + error;
+            }
+        }
+
+        async function uploadZipFile() {
+            const fileInput = document.getElementById('zipFileInput');
+            const file = fileInput.files[0];
+            const uploadResult = document.getElementById('uploadResult');
+            const downloadLink = document.getElementById('downloadLink');
+
+            if (!file) {
+                uploadResult.textContent = 'ファイルを選択してください。';
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('zipFile', file);
+
+            try {
+                const response = await fetch('/api/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+                uploadResult.textContent = result.message;
+
+                if (result.fileUrl) {
+                    downloadLink.href = result.fileUrl;
+                    downloadLink.style.display = 'block';
+                }
+            } catch (error) {
+                uploadResult.textContent = 'エラーが発生しました: ' + error;
+            }
+        }
+    </script>
+</body>
+</html>

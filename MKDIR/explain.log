@@ -1,0 +1,1537 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.2.7)  18 FEB 2025 12:09
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/home/tea-ingland/MKDIR/explain.tex
+(/home/tea-ingland/MKDIR/explain.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count187
+\c@section=\count188
+\c@subsection=\count189
+\c@subsubsection=\count190
+\c@paragraph=\count191
+\c@subparagraph=\count192
+\c@figure=\count193
+\c@table=\count194
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count195
+\l__pdf_internal_box=\box51
+)
+No file explain.aux.
+\openout1 = `explain.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+
+/home/tea-ingland/MKDIR/explain.tex:10: LaTeX Error: Unicode character の (U+306E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \maketitle
+               
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:10: LaTeX Error: Unicode character 説 (U+8AAC)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \maketitle
+               
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:10: LaTeX Error: Unicode character 明 (U+660E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \maketitle
+               
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 10.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 10.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 10.
+
+/home/tea-ingland/MKDIR/explain.tex:12: LaTeX Error: Unicode character は (U+306F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 \section{はじめに}
+                           
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:12: LaTeX Error: Unicode character じ (U+3058)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 \section{はじめに}
+                           
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:12: LaTeX Error: Unicode character め (U+3081)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 \section{はじめに}
+                           
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:12: LaTeX Error: Unicode character に (U+306B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 \section{はじめに}
+                           
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:13: LaTeX Error: Unicode character こ (U+3053)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 こ
+        れはこのプログラムの説明です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:13: LaTeX Error: Unicode character れ (U+308C)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 これ
+           はこのプログラムの説明です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:13: LaTeX Error: Unicode character は (U+306F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 これは
+              このプログラムの説明です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:13: LaTeX Error: Unicode character こ (U+3053)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 これはこ
+                 のプログラムの説明です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:13: LaTeX Error: Unicode character の (U+306E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 これはこの
+                    プログラムの説明です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:13: LaTeX Error: Unicode character プ (U+30D7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 これはこのプ
+                       ログラムの説明です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:13: LaTeX Error: Unicode character ロ (U+30ED)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 これはこのプロ
+                          グラムの説明です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:13: LaTeX Error: Unicode character グ (U+30B0)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 これはこのプログ
+                             ラムの説明です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:13: LaTeX Error: Unicode character ラ (U+30E9)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 これはこのプログラ
+                                ムの説明です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:13: LaTeX Error: Unicode character ム (U+30E0)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 これはこのプログラム
+                                   の説明です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:13: LaTeX Error: Unicode character の (U+306E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 これはこのプログラムの
+                                      説明です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:13: LaTeX Error: Unicode character 説 (U+8AAC)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 これはこのプログラムの説
+                                         明です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:13: LaTeX Error: Unicode character 明 (U+660E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 これはこのプログラムの説明
+                                            です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:13: LaTeX Error: Unicode character で (U+3067)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 これはこのプログラムの説明で
+                                               す。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:13: LaTeX Error: Unicode character す (U+3059)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 これはこのプログラムの説明です
+                                                  。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:13: LaTeX Error: Unicode character 。 (U+3002)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 ...はこのプログラムの説明です。
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:15: LaTeX Error: Unicode character デ (U+30C7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 \section{ディレクトリ構造}
+                                       
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:15: LaTeX Error: Unicode character ィ (U+30A3)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 \section{ディレクトリ構造}
+                                       
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:15: LaTeX Error: Unicode character レ (U+30EC)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 \section{ディレクトリ構造}
+                                       
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:15: LaTeX Error: Unicode character ク (U+30AF)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 \section{ディレクトリ構造}
+                                       
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:15: LaTeX Error: Unicode character ト (U+30C8)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 \section{ディレクトリ構造}
+                                       
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:15: LaTeX Error: Unicode character リ (U+30EA)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 \section{ディレクトリ構造}
+                                       
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:15: LaTeX Error: Unicode character 構 (U+69CB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 \section{ディレクトリ構造}
+                                       
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:15: LaTeX Error: Unicode character 造 (U+9020)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 \section{ディレクトリ構造}
+                                       
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:16: LaTeX Error: Unicode character 以 (U+4EE5)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 以
+        下は、このプログラムのディレクトリ構造です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:16: LaTeX Error: Unicode character 下 (U+4E0B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 以下
+           は、このプログラムのディレクトリ構造です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:16: LaTeX Error: Unicode character は (U+306F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 以下は
+              、このプログラムのディレクトリ構造です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:16: LaTeX Error: Unicode character 、 (U+3001)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 以下は、
+                 このプログラムのディレクトリ構造です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:16: LaTeX Error: Unicode character こ (U+3053)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 以下は、こ
+                    のプログラムのディレクトリ構造です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:16: LaTeX Error: Unicode character の (U+306E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 以下は、この
+                       プログラムのディレクトリ構造です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:16: LaTeX Error: Unicode character プ (U+30D7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 以下は、このプ
+                          ログラムのディレクトリ構造です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:16: LaTeX Error: Unicode character ロ (U+30ED)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 以下は、このプロ
+                             グラムのディレクトリ構造です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:16: LaTeX Error: Unicode character グ (U+30B0)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 以下は、このプログ
+                                ラムのディレクトリ構造です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:16: LaTeX Error: Unicode character ラ (U+30E9)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 以下は、このプログラ
+                                   ムのディレクトリ構造です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:16: LaTeX Error: Unicode character ム (U+30E0)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 以下は、このプログラム
+                                      のディレクトリ構造です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:16: LaTeX Error: Unicode character の (U+306E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 以下は、このプログラムの
+                                         ディレクトリ構造です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:16: LaTeX Error: Unicode character デ (U+30C7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 以下は、このプログラムのデ
+                                            ィレクトリ構造です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:16: LaTeX Error: Unicode character ィ (U+30A3)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 以下は、このプログラムのディ
+                                               レクトリ構造です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:16: LaTeX Error: Unicode character レ (U+30EC)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 以下は、このプログラムのディレ
+                                                  クトリ構造です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:16: LaTeX Error: Unicode character ク (U+30AF)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...は、このプログラムのディレク
+                                                  トリ構造です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:16: LaTeX Error: Unicode character ト (U+30C8)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...、このプログラムのディレクト
+                                                  リ構造です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:16: LaTeX Error: Unicode character リ (U+30EA)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...このプログラムのディレクトリ
+                                                  構造です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:16: LaTeX Error: Unicode character 構 (U+69CB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...のプログラムのディレクトリ構
+                                                  造です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:16: LaTeX Error: Unicode character 造 (U+9020)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...プログラムのディレクトリ構造
+                                                  です。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:16: LaTeX Error: Unicode character で (U+3067)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...ログラムのディレクトリ構造で
+                                                  す。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:16: LaTeX Error: Unicode character す (U+3059)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...グラムのディレクトリ構造です
+                                                  。
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:16: LaTeX Error: Unicode character 。 (U+3002)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 ...ラムのディレクトリ構造です。
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:28: LaTeX Error: Unicode character こ (U+3053)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \section{このプログラムの説明}
+                                             
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:28: LaTeX Error: Unicode character の (U+306E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \section{このプログラムの説明}
+                                             
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:28: LaTeX Error: Unicode character プ (U+30D7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \section{このプログラムの説明}
+                                             
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:28: LaTeX Error: Unicode character ロ (U+30ED)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \section{このプログラムの説明}
+                                             
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:28: LaTeX Error: Unicode character グ (U+30B0)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \section{このプログラムの説明}
+                                             
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:28: LaTeX Error: Unicode character ラ (U+30E9)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \section{このプログラムの説明}
+                                             
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:28: LaTeX Error: Unicode character ム (U+30E0)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \section{このプログラムの説明}
+                                             
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:28: LaTeX Error: Unicode character の (U+306E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \section{このプログラムの説明}
+                                             
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:28: LaTeX Error: Unicode character 説 (U+8AAC)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \section{このプログラムの説明}
+                                             
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:28: LaTeX Error: Unicode character 明 (U+660E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \section{このプログラムの説明}
+                                             
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:29: LaTeX Error: Unicode character 今 (U+4ECA)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \section{今後の追加要素}
+                                    
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:29: LaTeX Error: Unicode character 後 (U+5F8C)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \section{今後の追加要素}
+                                    
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:29: LaTeX Error: Unicode character の (U+306E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \section{今後の追加要素}
+                                    
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:29: LaTeX Error: Unicode character 追 (U+8FFD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \section{今後の追加要素}
+                                    
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:29: LaTeX Error: Unicode character 加 (U+52A0)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \section{今後の追加要素}
+                                    
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:29: LaTeX Error: Unicode character 要 (U+8981)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \section{今後の追加要素}
+                                    
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:29: LaTeX Error: Unicode character 素 (U+7D20)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \section{今後の追加要素}
+                                    
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character ・ (U+30FB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ・
+        プログラムをディレクトリごと渡すことでそのデ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character プ (U+30D7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ・プ
+           ログラムをディレクトリごと渡すことでそのデ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character ロ (U+30ED)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ・プロ
+              グラムをディレクトリごと渡すことでそのデ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character グ (U+30B0)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ・プログ
+                 ラムをディレクトリごと渡すことでそのデ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character ラ (U+30E9)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ・プログラ
+                    ムをディレクトリごと渡すことでそのデ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character ム (U+30E0)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ・プログラム
+                       をディレクトリごと渡すことでそのデ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character を (U+3092)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ・プログラムを
+                          ディレクトリごと渡すことでそのデ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character デ (U+30C7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ・プログラムをデ
+                             ィレクトリごと渡すことでそのデ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character ィ (U+30A3)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ・プログラムをディ
+                                レクトリごと渡すことでそのデ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character レ (U+30EC)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ・プログラムをディレ
+                                   クトリごと渡すことでそのデ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character ク (U+30AF)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ・プログラムをディレク
+                                      トリごと渡すことでそのデ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character ト (U+30C8)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ・プログラムをディレクト
+                                         リごと渡すことでそのデ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character リ (U+30EA)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ・プログラムをディレクトリ
+                                            ごと渡すことでそのデ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character ご (U+3054)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ・プログラムをディレクトリご
+                                               と渡すことでそのデ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character と (U+3068)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ・プログラムをディレクトリごと
+                                                  渡すことでそのデ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character 渡 (U+6E21)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ...ログラムをディレクトリごと渡
+                                                  すことでそのディ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character す (U+3059)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ...グラムをディレクトリごと渡す
+                                                  ことでそのディレ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character こ (U+3053)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ...ラムをディレクトリごと渡すこ
+                                                  とでそのディレク�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character と (U+3068)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ...ムをディレクトリごと渡すこと
+                                                  でそのディレクト�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character で (U+3067)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ...をディレクトリごと渡すことで
+                                                  そのディレクトリ�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character そ (U+305D)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ...ディレクトリごと渡すことでそ
+                                                  のディレクトリ構�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character の (U+306E)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ...ィレクトリごと渡すことでその
+                                                  ディレクトリ構造�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character デ (U+30C7)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ...レクトリごと渡すことでそのデ
+                                                  ィレクトリ構造を�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character ィ (U+30A3)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ...クトリごと渡すことでそのディ
+                                                  レクトリ構造を出�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character レ (U+30EC)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ...トリごと渡すことでそのディレ
+                                                  クトリ構造を出力�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character ク (U+30AF)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ...リごと渡すことでそのディレク
+                                                  トリ構造を出力す�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character ト (U+30C8)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ...ごと渡すことでそのディレクト
+                                                  リ構造を出力する�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character リ (U+30EA)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ...と渡すことでそのディレクトリ
+                                                  構造を出力する機能
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character 構 (U+69CB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ...渡すことでそのディレクトリ構
+                                                  造を出力する機能
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character 造 (U+9020)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ...すことでそのディレクトリ構造
+                                                  を出力する機能
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character を (U+3092)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ...ことでそのディレクトリ構造を
+                                                  出力する機能
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character 出 (U+51FA)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ...とでそのディレクトリ構造を出
+                                                  力する機能
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character 力 (U+529B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ...でそのディレクトリ構造を出力
+                                                  する機能
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character す (U+3059)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ...そのディレクトリ構造を出力す
+                                                  る機能
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character る (U+308B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ...のディレクトリ構造を出力する
+                                                  機能
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character 機 (U+6A5F)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ...ディレクトリ構造を出力する機
+                                                  能
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:30: LaTeX Error: Unicode character 能 (U+80FD)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ...ィレクトリ構造を出力する機能
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:31: LaTeX Error: Unicode character ・ (U+30FB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31 ・
+        
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:32: LaTeX Error: Unicode character ・ (U+30FB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 ・
+        
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:33: LaTeX Error: Unicode character ・ (U+30FB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 ・
+        
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+/home/tea-ingland/MKDIR/explain.tex:34: LaTeX Error: Unicode character ・ (U+30FB)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34 ・
+        
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./explain.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 532 strings out of 474222
+ 9645 string characters out of 5748734
+ 1924975 words of memory out of 5000000
+ 22855 multiletter control sequences out of 15000+600000
+ 561709 words of font info for 48 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 35i,6n,50p,177b,197s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on explain.pdf (1 page, 42391 bytes).
+PDF statistics:
+ 28 PDF objects out of 1000 (max. 8388607)
+ 16 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

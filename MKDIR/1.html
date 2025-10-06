@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ディレクトリ自動生成ツール</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>ディレクトリ自動生成ツール</h1>
+    <p>ディレクトリ構造をテキスト形式で入力してください。例:</p>
+    <pre>
+project-root/
+├── index.html
+├── css/
+│   └── style.css
+└── js/
+    └── main.js
+    </pre>
+    <textarea id="directoryInput" placeholder="ディレクトリ構造を入力"></textarea>
+    <button onclick="generateDirectory()">生成する</button>
+    <h2>生成結果:</h2>
+    <pre id="resultOutput"></pre>
+
+    <script>
+        function generateDirectory() {
+            const input = document.getElementById('directoryInput').value;
+            const output = document.getElementById('resultOutput');
+            output.textContent = input;
+            alert("生成機能はまだ実装されていません。今後のバージョンにご期待ください！");
+        }
+    </script>
+</body>
+</html>
